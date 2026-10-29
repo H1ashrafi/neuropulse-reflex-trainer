@@ -113,4 +113,4 @@ lib/screens/                       dashboard, training, result
 
 ## License
 
-MIT, see `LICENSE`.
+Free for personal, educational and research use. **Commercial use (selling, publishing the app in a store, or using it in a paid product) is not allowed without written permission.** See `LICENSE` (PolyForm Noncommercial 1.0.0).
