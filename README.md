@@ -4,6 +4,33 @@ A 10-minute daily reflex trainer for Android, built with Flutter (Dart 3, null-s
 It runs completely on the phone: no server, no account, no analytics, no API keys,
 and the release build does not request the `INTERNET` permission.
 
+## Screenshots
+
+<p align="center">
+  <img src="docs/images/dashboard.png" width="260" alt="Dashboard with today's best score and the start button">
+  <img src="docs/images/training.png" width="260" alt="Training session, phase 1 countdown">
+  <img src="docs/images/result.png" width="260" alt="Result screen with the Daily Reflex Index">
+</p>
+
+*Dashboard (today's best, vs yesterday, practice modes, 30-day trend) - a session starting - the result screen after a ranked run. The screenshots are rendered by the app's own widget tests with sample data.*
+
+## What it does
+
+NeuroPulse measures how fast and how reliably you react, and condenses a session into one number, the **Daily Reflex Index (DRI)**, from 0 to 100.
+
+- **One ranked session a day-style routine.** The full 10-minute protocol is the only thing that is ranked; shorter runs are practice.
+- **Progress you can see.** A 30-day trend chart (daily best, 7-day mean, number of attempts) and a Hall of Fame with your all-time top 3.
+- **Honest numbers.** False starts and misses are penalised, early taps are excluded, and leaving the app mid-session throws that session away.
+- **Private by design.** Everything stays on the phone: no account, no server, no analytics, no ads.
+- **Backup you control.** Export your history as JSON to the clipboard and import it back, with strict validation.
+
+## How a session looks
+
+1. Pick **Start 10-min protocol** (or a 3-minute Quick / SRT / Go-No-Go practice run) on the dashboard.
+2. A countdown starts, then the four phases run back to back with the current phase and the remaining time at the top.
+3. After the last phase the result screen shows the DRI, mean reaction time, standard deviation, accuracy, trials, false starts and misses, and tells you whether it is a new record.
+4. Tap **Again** for another run or **Dashboard** to see the updated trend.
+
 ## The protocol
 
 | Phase | Time | Task |
